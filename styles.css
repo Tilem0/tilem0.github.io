@@ -1,0 +1,44 @@
+:root {
+  color-scheme: light dark;
+  --bg: #f8f7f3;
+  --fg: #1b1b1b;
+  --muted: #57534e;
+  --link: #0b5fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111827;
+    --fg: #e5e7eb;
+    --muted: #9ca3af;
+    --link: #93c5fd;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+header,
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+a {
+  color: var(--link);
+}
+
+p,
+li {
+  color: var(--muted);
+}
